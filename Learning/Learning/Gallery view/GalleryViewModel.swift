@@ -31,6 +31,7 @@ class GalleryViewModel: NSObject, NSURLSessionDataDelegate {
             let sessionConfig = NSURLSessionConfiguration.defaultSessionConfiguration()
             let session = NSURLSession(configuration: sessionConfig, delegate: self, delegateQueue: nil)
             let task = session.dataTaskWithRequest(request)
+            NSNotificationCenter.defaultCenter().postNotificationName(startAnimNotification, object: nil, userInfo: ["meal" : meal.name])
             task.resume()
         }
     }
@@ -52,6 +53,7 @@ class GalleryViewModel: NSObject, NSURLSessionDataDelegate {
         let correctMeal = self.loadMealByIdentifier("\(task.originalRequest)")
         if correctMeal.index {
             NSNotificationCenter.defaultCenter().postNotificationName(imageNotification, object: self, userInfo: ["index" : correctMeal.index!])
+            NSNotificationCenter.defaultCenter().postNotificationName(stopAnimNotification, object: nil, userInfo: ["meal" : correctMeal.meal!.name])
         }
     }
     

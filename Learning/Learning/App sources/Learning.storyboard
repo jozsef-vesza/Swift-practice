@@ -63,12 +63,21 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRE-dd-sPL">
                                             <rect key="frame" x="0.0" y="0.0" width="368" height="273"/>
-                                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vjV-UI-uiz">
+                                            <rect key="frame" x="166" y="118" width="37" height="37"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vjV-UI-uiz" secondAttribute="trailing" constant="165" id="612-jM-LZt"/>
+                                    <constraint firstAttribute="bottom" secondItem="vjV-UI-uiz" secondAttribute="bottom" constant="118" id="AW2-G8-wKh"/>
+                                    <constraint firstItem="vjV-UI-uiz" firstAttribute="leading" secondItem="4am-66-R6G" secondAttribute="leading" constant="166" id="mbS-2F-aCP"/>
+                                    <constraint firstItem="vjV-UI-uiz" firstAttribute="top" secondItem="4am-66-R6G" secondAttribute="top" constant="118" id="u5m-HN-NVL"/>
+                                </constraints>
                                 <connections>
+                                    <outlet property="downloadIndicator" destination="vjV-UI-uiz" id="XYc-Xj-8K2"/>
                                     <outlet property="mealImage" destination="cRE-dd-sPL" id="exg-fs-NrK"/>
                                 </connections>
                             </collectionViewCell>

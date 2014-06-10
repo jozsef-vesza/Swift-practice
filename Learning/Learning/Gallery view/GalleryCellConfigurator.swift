@@ -9,6 +9,7 @@
 import UIKit
 
 class GalleryCellConfigurator: NSObject, CellConfiguratorDelegate {
+    
     func fetchReuseIdentifierForCell(object usingObject: AnyObject) -> String {
         return "galleryCell"
     }
@@ -17,6 +18,7 @@ class GalleryCellConfigurator: NSObject, CellConfiguratorDelegate {
         let returnCell = cell as GalleryCell
         let meal = object as Meal
         returnCell.mealImage.image = UIImage(data: meal.imageData)
+        returnCell.mealName = meal.name
         
         return returnCell
     }

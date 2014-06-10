@@ -50,6 +50,26 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>8E33A8C719475F4A002A2AA6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>DownloaderCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E33A8C819475F4A002A2AA6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8E33A8C719475F4A002A2AA6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>8E779ED41946A50500E9DED3</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -257,6 +277,7 @@
 				<string>8EDB5C29193E5E0A00411BFA</string>
 				<string>8E779ED41946A50500E9DED3</string>
 				<string>8E779EE41946B9E800E9DED3</string>
+				<string>8E33A8C719475F4A002A2AA6</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -366,6 +387,7 @@
 				<string>8EC1ACC2193F97B0001B1461</string>
 				<string>8EC1ACBE193F92D7001B1461</string>
 				<string>8EDB5C2A193E5E0A00411BFA</string>
+				<string>8E33A8C819475F4A002A2AA6</string>
 				<string>8EC1ACC0193F9596001B1461</string>
 			</array>
 			<key>isa</key>
